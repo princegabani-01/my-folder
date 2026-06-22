@@ -1,0 +1,11 @@
+body{
+
+  background-image: url("https://img.magnific.com/free-vector/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+.text{
+    color:black;
+}

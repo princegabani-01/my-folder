@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.w25{
+    width: 25%;
+    color: white;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+
+
+}
+.w100{
+    width: 100%;
+}
+.w1140{
+    width: 1140px;
+}
+.flex{
+    
+    display: flex;
+    width: 100%;
+    
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Clarkson, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.head{
+    font-size: xx-large;
+    
+}
+.p1{
+    background-image:url("/media/p1.webp");
+    width: 100%;
+}
+.p2{
+    background-image:url(/media/p2.webp);
+    width: 100%;
+}
+.p3{
+    background-image: url(/media/p3.webp);
+    width: 100%;
+}
+.p4{
+    background-image: url(/media/p4.webp);
+    width: 100%;
+}
+.w1{
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .w1140 {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .w25 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .head {
+        font-size: large;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .w1140 {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .w25 {
+        width: calc(50% - 30px);
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .w25 {
+        width: calc(50% - 30px);
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .w1140 {
+        width: 960px;
+        padding: 0;
+    }
+
+    .w25 {
+        width: calc(25% - 30px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .w1140 {
+        width: 1250px;
+    }
+
+    .w25 {
+        width: calc(25% - 30px);
+    }
+}

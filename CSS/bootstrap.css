@@ -1,0 +1,16 @@
+.bg{
+    background-color: red;
+
+}
+.d-md-block p {
+    color:white;
+}
+.d-md-block h5 {
+    color:white;
+}
+.card1{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+}

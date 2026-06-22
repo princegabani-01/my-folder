@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Business Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; }
+    nav ul li { margin:0 15px; }
+    nav ul li a { color:#fff; text-decoration:none; transition:color 0.3s ease; }
+    nav ul li a:hover { color:#3498db; }
+
+    .hero { background:#3498db; color:#fff; padding:80px; text-align:center; position:relative; overflow:hidden; }
+    .hero h2 { font-size:2.5em; animation: slideIn 2s ease forwards; }
+    .hero p { opacity:0; animation: fadeIn 3s ease forwards; animation-delay:1s; }
+
+    @keyframes slideIn {
+      from { transform:translateX(-100%); opacity:0; }
+      to { transform:translateX(0); opacity:1; }
+    }
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to { opacity:1; }
+    }
+
+    .section { padding:50px; text-align:center; }
+    .services { display:flex; justify-content:space-around; flex-wrap:wrap; }
+    .service { width:30%; background:#fff; padding:20px; margin:10px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transition:transform 0.3s ease, box-shadow 0.3s ease; }
+    .service:hover { transform:translateY(-10px); box-shadow:0 8px 12px rgba(0,0,0,0.2); }
+
+    footer { background:#2c3e50; color:#fff; text-align:center; padding:20px; }
+    form { display:flex; flex-direction:column; width:300px; margin:auto; }
+    input, textarea { margin:10px 0; padding:10px; border:1px solid #ccc; border-radius:4px; }
+    button { background:#3498db; color:#fff; border:none; padding:10px; cursor:pointer; transition:background 0.3s ease; }
+    button:hover { background:#2980b9; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Business Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>qa
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Welcome to Our Business</h2>
+    <p>We provide top-quality services to help your business grow.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Consulting</h3>
+        <p>Expert advice to guide your strategy.</p>
+      </div>
+      <div class="service">
+        <h3>Design</h3>
+        <p>Creative solutions for branding and marketing.</p>
+      </div>
+      <div class="service">
+        <h3>Development</h3>
+        <p>Custom websites and applications built for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Business Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
