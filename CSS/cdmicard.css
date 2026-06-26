@@ -2,6 +2,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
 }
+
+
 .eyebrow {
   display: flex;
   align-items: center;
@@ -47,9 +49,9 @@ body {
 
     background: linear-gradient(
         135deg,
-        #020e3a 0%, 
-        #1457b5 35%, 
-          #061d39 100%
+        #020e3a 30%, 
+        #1457b5 100%, 
+        #061d39 100%
     ) !important;
 }
 .card-title {
@@ -60,10 +62,6 @@ body {
   letter-spacing:-0.048em !important;
   
   
-}
-
-.card-text{
-    
 }
 .card {
     position:relative;
@@ -76,7 +74,7 @@ body {
 }
 .card{
     border-radius:40%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 .btn {
   position: relative;
