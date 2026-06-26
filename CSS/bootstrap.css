@@ -14,3 +14,13 @@
     align-items: center;
 
 }
+.rounded-pill img{
+    width: 50%;
+
+}
+body{
+    margin-bottom: 500px;
+}
+.container{
+    margin-bottom: 300px;
+}
